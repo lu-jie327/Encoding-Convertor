@@ -46,6 +46,7 @@
         Me.UTF8Btn = Me.Factory.CreateRibbonButton
         Me.UTF16LEBtn = Me.Factory.CreateRibbonButton
         Me.UTF16BEBtn = Me.Factory.CreateRibbonButton
+        Me.SettingBtn = Me.Factory.CreateRibbonButton
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Tab1.SuspendLayout()
         Me.Group1.SuspendLayout()
@@ -62,6 +63,7 @@
         Me.Group1.Items.Add(Me.UTF8Btn)
         Me.Group1.Items.Add(Me.UTF16LEBtn)
         Me.Group1.Items.Add(Me.UTF16BEBtn)
+        Me.Group1.Items.Add(Me.SettingBtn)
         Me.Group1.Label = "Convertor"
         Me.Group1.Name = "Group1"
         '
@@ -79,6 +81,11 @@
         '
         Me.UTF16BEBtn.Label = "To UTF-16 BE"
         Me.UTF16BEBtn.Name = "UTF16BEBtn"
+        '
+        'SettingBtn
+        '
+        Me.SettingBtn.Label = "Setting"
+        Me.SettingBtn.Name = "SettingBtn"
         '
         'OpenFileDialog1
         '
@@ -103,6 +110,7 @@
     Friend WithEvents UTF16BEBtn As Microsoft.Office.Tools.Ribbon.RibbonButton
     Friend WithEvents OpenFileDialog1 As Windows.Forms.OpenFileDialog
     Friend WithEvents UTF8Btn As Microsoft.Office.Tools.Ribbon.RibbonButton
+    Friend WithEvents SettingBtn As Microsoft.Office.Tools.Ribbon.RibbonButton
 End Class
 
 Partial Class ThisRibbonCollection
